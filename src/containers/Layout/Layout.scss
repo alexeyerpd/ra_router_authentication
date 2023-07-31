@@ -1,0 +1,13 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}layout';
+
+#{$block} {
+    display: grid;
+    gap: 20px;
+
+    &__content {
+        justify-self: center;
+        width: 60%;
+    }
+}

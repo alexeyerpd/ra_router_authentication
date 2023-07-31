@@ -1,0 +1,17 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}news';
+
+#{$block} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 24px;
+
+    &__item {
+        display: inline-flex;
+
+        text-decoration: none;
+        color: inherit;
+        font: inherit;
+    }
+}

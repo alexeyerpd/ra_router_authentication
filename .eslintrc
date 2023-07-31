@@ -58,7 +58,8 @@
             }
         ],
         "@typescript-eslint/no-duplicate-imports": "off",
-        "@typescript-eslint/no-parameter-properties": "off"
+        "@typescript-eslint/no-parameter-properties": "off",
+        "@typescript-eslint/no-useless-constructor": "off"
     },
     "overrides": [
         {

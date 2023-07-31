@@ -41,9 +41,10 @@ export function useStorageState<T>(key: string, defaultValue: T) {
         return getStorageValue(key, defaultValue);
     });
 
-    React.useEffect(() => {
-        setStorageValue(key, state);
-    }, [key, state]);
+    const setStorageState = (value: T) => {
+        setState(value);
+        setStorageValue(key, value);
+    };
 
-    return [state, setState] as const;
+    return [state, setStorageState] as const;
 }

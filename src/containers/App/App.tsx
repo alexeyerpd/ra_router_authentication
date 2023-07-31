@@ -1,10 +1,8 @@
-import {cn} from 'utils/classname';
+import {RouterProvider} from 'react-router';
+import {router} from 'ui/routes/routes';
 
 import '../../styles/root.scss';
-import './App.scss';
-
-const block = cn('app');
 
 export function App() {
-    return <div className={block()}>App</div>;
+    return <RouterProvider router={router} />;
 }

@@ -1,0 +1,26 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}news-item';
+
+#{$block} {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__block {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__content {
+        margin: 0;
+    }
+}
